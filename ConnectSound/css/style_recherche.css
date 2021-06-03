@@ -1,0 +1,235 @@
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius:3px;
+}
+
+
+::-webkit-scrollbar-thumb:hover{
+    background: #555;
+    width:10px;
+}
+/* Style Aside Result */
+
+.result{
+    display: inline-block;
+    background-color: #FFFFFF;
+    width: 45%;
+    margin-left: 10%;
+    box-shadow: 2px 10px 10px rgba(0,0,0, 0.16);
+    margin-top: 50px;
+
+}
+
+.result .slider{
+    max-height: 435px;
+    overflow-y: auto;
+}
+.result ul  li  img{
+    width: 100px;
+    border-radius: 100px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.result ul li{
+    list-style: none;
+    display: block;
+}
+.result ul a{
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 10px;
+    text-decoration: none;
+}
+
+.result li{
+    margin-bottom: 30px;
+    margin-left: 15px;
+}
+.result ul{
+    margin: 0;
+    padding: 0;
+    columns: 2;
+    width: 100%;
+
+
+}
+
+.result  form{
+    margin-bottom: 30px;
+    padding-top: 20px;
+}
+
+.bouton{
+    position: relative;
+}
+.bouton a{
+    text-decoration: none;
+}
+
+body > div > aside > form > input[type=search]:nth-child(1){
+    display: block;
+    border: 0.5px black solid;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Style Main Fil */
+
+.fil{
+    display: inline-block;
+    margin-top: 50px;
+    width: 35%;
+    margin-left: 15%;
+}
+
+/* style publication */
+.publication{
+    display: block;
+    background-color: #FFFFFF;
+    box-shadow: 2px 10px 10px rgba(0,0,0, 0.16);
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+}
+
+#react{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.publication #react img{
+    width: 36px !important;
+    height: 36px !important;
+    border-radius: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+    padding-right: 150px;
+}
+
+
+.img_publication {
+    overflow: hidden;
+    width: 100%;
+    height: 350px;
+}
+
+#img_publi{
+    width: 100%;
+    height: auto;
+    padding: unset;
+    margin: unset;
+    border-radius: unset;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+body > div > main > div> p{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    margin-top: -15px;
+}
+
+body > div > main > div > a{
+    position: relative;
+    top: -20px;
+    background: rgba(190, 227, 219, 0.49);
+    width: 100%;
+    display: block;
+    padding-bottom: 2px;
+    z-index: 2;
+    text-decoration: none;
+    color: #000101;
+}
+
+
+body > div > main > div:nth-child(1) > img:nth-child(5){
+    width: 100%;
+}
+.publication #react img:nth-child(3){
+    padding-right: 0;
+}
+.fil .publication img:nth-child(1){
+    width : 100px; height : 100px;
+    border: none;
+    -moz-border-radius : 75px;
+    -webkit-border-radius : 75px;
+    border-radius : 75px;
+    padding: 10px;
+    display: inline-block;
+    z-index: 2;
+    position: relative;
+
+
+}
+
+body > div > main > div > hr:nth-child(3){
+    position: relative;
+    top: -40px;
+}
+
+.fil .profile_information{
+    display: inline-block;
+    position: relative;
+    top: -10px;
+    margin-left: 20px;
+
+}
+
+.fil .profile_information p{
+    position: relative;
+    top: -25px;
+}
+
+.fil .profile_information p:nth-child(3){
+    position: relative;
+    top: -34px;
+}
+
+body > div > main > div:nth-child(1) > hr:nth-child(7){
+    width: 75%;
+}
+
+.search{
+    display: block;
+    width: 100%;
+}
+.filter{
+    display: inline-block;
+    vertical-align: top;
+    background-color: #FFFFFF;
+    width: 30%;
+    height: 250px;
+    margin-top: 50px;
+    margin-left: 100px;
+    box-shadow: 2px 10px 10px rgba(0,0,0, 0.16);
+}
+
+
+.filter select{
+    display: block;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.filter h2{
+    text-align: center;
+    margin-bottom: 50px;
+}

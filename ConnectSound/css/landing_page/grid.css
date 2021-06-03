@@ -1,0 +1,57 @@
+:root {
+    --offset: 30px;
+    --max_width: 1310px;
+    --columns: 6;
+    --gutter: 16px;
+    --color: hsla(0, 100%, 50%, 0.1);
+    /* Helper variables */
+    --repeating-width: calc(100% / var(--columns));
+    --column-width: calc((100% / var(--columns)) - var(--gutter));
+    --background-width: calc(100% + var(--gutter));
+    --background-columns: repeating-linear-gradient(
+            to right,
+            var(--color),
+            var(--color) var(--column-width),
+            transparent var(--column-width),
+            transparent var(--repeating-width)
+    );
+}
+
+@media only screen and (min-width: 24em) {
+    :root { --columns: 2; }
+}
+@media only screen and (min-width: 42em) {
+    :root { --columns: 3; }
+}
+@media only screen and (min-width: 62em) {
+    :root { --columns: 6; }
+}
+
+body::before {
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+    margin-right: auto;
+    margin-left: auto;
+    width: calc(100% - (2 * var(--offset)));
+    max-width: var(--max_width);
+    min-height: 6000px;
+    content: '';
+    background-image: var(--background-columns);
+    background-size: var(--background-width) 100%;
+    transform: scaleY(0);
+    transform-origin: top center;
+    z-index: 1000;
+    pointer-events: none;
+    transition: transform .5s;
+}
+body.show::before {
+    transform: scaleY(1);
+}
+
+.btn-grid {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    outline: 0;
+    cursor: pointer;
+}
