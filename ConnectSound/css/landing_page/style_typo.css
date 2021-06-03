@@ -1,0 +1,37 @@
+@import url(/fonts/HindMadurai-Regular.ttf);
+@import url(/fonts/Dubai-Light.ttf);
+body{
+    font-family: 'Hind Madurai', sans-serif;
+    color: #555B6E;
+}
+header{
+    font-family: 'Hind Madurai', sans-serif;
+    color: #555B6E;
+}
+@media only screen and (min-width: 1400px) {
+    body .home h1 {
+        font-size: 6rem;
+        font-family: 'Hind Madurai', sans-serif;
+    }
+}
+h2 {
+    font-weight: lighter;
+    font-size: 3.5rem;
+}
+body .home span {
+    color: #bee3db;
+}
+h3 {
+    color: #555B6E;
+    font-size: 2.5rem;
+    font-weight: lighter;
+}
+@media only screen and (min-width: 1400px) {
+    .with-us li, .concept p {
+        font-family: "Dubai Light", sans-serif;
+        font-size: 1.5rem;
+    }
+}
+.concept span {
+    color: #d65c58;
+}

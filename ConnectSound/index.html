@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ConnectSound</title>
+    <link rel="stylesheet" href="css/landing_page/style_accueil.css">
+    <link rel="stylesheet" href="css/landing_page/style_header.css">
+    <link rel="stylesheet" href="css/landing_page/style_typo.css">
+    <link rel="stylesheet" href="css/landing_page/grid.css">
+</head>
+<header>
+    <a href="index.html"><img class="design" src="img/accueil/style-element.png"></a>
+    <ul>
+
+        <li><a href="dons.html">Faire un don</a></li>
+        <li><a href="#concept">Le Concept</a></li>
+        <li><a href="#equipe">L'Équipe</a></li>
+        <li class="button"><a href="inscription.php">Se lancer</a></li>
+
+    </ul>
+    <hr >
+    <button class="btn-grid">Afficher la grille</button>
+</header>
+<body>
+<div class="home">
+    <img class="logo" src="img/accueil/logo.png" alt="logo connectsound">
+    <h1>Connect<span>Sound.</span></h1>
+    <h2>Le réseau social des musiciens</h2>
+    <img class="img-fond" src="img/accueil/fond.png" alt="fond">
+
+    <div class="with-us">
+    <h3>Avec nous :</h3>
+    <img src="img/accueil/avec-nous.png" alt="illustrations">
+    <ul>
+        <li>Une diversité musicale</li>
+        <li>Des collaborations musicales</li>
+        <li>Une égalité des chances</li>
+    </ul>
+    </div>
+</div>
+
+<div class="concept" id="concept">
+    <h2>Le concept </h2>
+    <article class="content-1">
+        <div class="gauche-1">
+        <h3>Postez vos créations musicales</h3>
+        <p>
+            Avec ConnectSound, vous avez la
+            possibilité de montrer à
+            d'autres <span>passionnés</span> de musique ce que vous créez.
+            Quel que soit votre domaine
+            musical, tout le monde est <span>bienvenu</span> !
+        </p>
+        </div>
+        <div class="droite-1">
+        <img src="img/accueil/img-1.png" alt="illustration point 1">
+        </div>
+    </article>
+    <article class="content-2" >
+        <div class="gauche-2">
+            <img src="img/accueil/img-2.png" alt="illustration point 2">
+        </div>
+        <div class="droite-2">
+            <h3>
+                Collaborez !
+            </h3>
+            <p>
+                Le but principal de notre site est de
+                vous offrir la possibilité des créer de belles
+                <span>collaborations</span> avec d'autres musiciens,
+                comme vous.
+                Faire de nouvelles rencontres,
+                autour du sujet qui vous intéresse,
+                un bon moyen de déconnecter, non ?
+            </p>
+        </div>
+    </article>
+    <article class="content-3">
+        <div class="gauche-3">
+            <h3>
+                Découvrez de nouveaux
+                univers ...
+            </h3>
+            <p>
+                ConnectSound vous propose toute sortes
+                de styles musicaux différents.
+                <span>Du jazz au rap</span>, en passant par la musique
+                classique, tout est possible avec nous !
+                C'est pour cette raison que notre site est
+                propice à découvrir de nouveaux styles, que
+                vous ne connaissiez pas ou peu.
+            </p>
+        </div>
+        <div class="droite-3">
+            <img src="img/accueil/img-3.png" alt="illustration point 3">
+        </div>
+    </article>
+    <article class="content-4">
+        <div class="gauche-4">
+            <img src="img/accueil/img-4.png" alt="image du site">
+        </div>
+        <div class="droite-4">
+        <h3>
+            Trouvez ce que vous cherchez en 2 clics
+        </h3>
+        <p>
+            Grâce à la recherche via des <span>filtres</span>, vous
+            pouvez sélectionner un style ou un instrument
+            pour visionner tous les postes correspondants
+            à la recherche.
+            Des <span>centres d'intérêts</span> sont aussi
+            à remplir lors de votre inscription. C'est grâce
+            à ceux-ci que vous pourrez également trouver
+            votre bonheur en 3 secondes chrono !
+        </p>
+        </div>
+    </article>
+    <article class="content-5">
+            <h3>C'est gratuit !</h3>
+            <p>ConnectSound est un site <span>gratuit</span>,
+                vous avez accès à toutes les fonctionnalités
+                de notre site sans payer.
+                Le but est pour nous de garantir une
+                <span>égalité des chances</span> pour tous.
+            </p>
+            <img src="img/accueil/img-5.png" alt="instruments tenus par des mains">
+    </article>
+    <a href="inscription.php"><button>Rejoignez-nous !</button></a>
+</div>
+
+<div class="team" id="equipe">
+    <h2>L'équipe</h2>
+    <p class="explication">Etudiants en première année de DUT MMI (Métiers du Multimédia et de l'Internet) à Montbéliard,
+        nous avons dû créer un site internet innovant.
+        C'est donc de cette manière que ConnectSound a été créé. </p>
+    <ul>
+        <li><img src="img/accueil/equipe/Benjamin.png" alt="Benjamin Lugan"><p>Benjamin Lugan</p></li>
+        <li><img src="img/accueil/equipe/Maxime.png" alt="Maxime Malatier"><p>Maxime Malatier</p></li>
+        <li><img src="img/accueil/equipe/Solenne.png" alt="Solenne Heitz"><p>Solenne Heitz</p></li>
+    </ul>
+
+    <button><a href="contact.html">Vous avez la possibilité de nous  contacter ici</a></button>
+</div>
+<footer>
+    <a href="mentions_legales.html">Mentions légales</a>
+</footer>
+</body>
+</html>
+<script>
+
+    var button = document.querySelector(".btn-grid");
+    var grid = document.querySelector("body");
+
+    function doToggle() {
+        grid.classList.toggle('show');
+        if (button.textContent === "Afficher la grille") {
+            button.textContent = "Masquer la grille";
+        } else {
+            button.textContent = "Afficher la grille";
+        }
+    }
+    button.addEventListener('click', doToggle);
+</script>
